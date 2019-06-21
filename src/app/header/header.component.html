@@ -6,8 +6,11 @@
       <span style="font-family: Impact, Charcoal, sans-serif; color:white; margin-right: 3px">MyApp</span>
       <span style="color:white; font-size: 0.1em">{{version}}</span>
   </a>
-
-  <ul class="navbar-nav  mt-2 mt-lg-0 mr-auto">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="navbar-nav  mt-2 mt-lg-0 mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -26,19 +29,19 @@
            <input class="form-control mr-sm-2" type="text" placeholder="Search">
        </div>
    </form> -->
-  <ul class="navbar-nav px-3">
-    <li class="nav-item text-nowrap">
-        <div class="btn-group" dropdown>
-            <button dropdownToggle type="button" class="btn btn-dark waves-light" style="padding-top: 5px; padding-bottom: 5px;">
-              <app-avatar src="assets/images/avatar.jpg" [round]="true" [size]="35" ></app-avatar>                
-            </button>    
-            <div class="dropdown-menu dropdown-primary">
-              <!-- <a class="dropdown-item" (click)="signOut($event)">Log out</a> -->
-            </div>
-        </div>    
-    </li>
-  </ul>
-  
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+          <div class="btn-group" dropdown>
+              <button dropdownToggle type="button" class="btn btn-dark waves-light" style="padding-top: 5px; padding-bottom: 5px;">
+                <app-avatar src="assets/images/avatar.jpg" [round]="true" [size]="35" ></app-avatar>                
+              </button>    
+              <div class="dropdown-menu dropdown-primary">
+                <a class="dropdown-item" (click)="console.log('todo:logout action')">Log out</a>
+              </div>
+          </div>    
+      </li>
+    </ul>
+  </div>
   <!-- Collapsible content -->
   </nav>
   
